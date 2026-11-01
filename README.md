@@ -84,12 +84,6 @@ Recorded with Sensor Logger on an iPhone 13: accelerometer and gyroscope (x, y, 
   <img src="figures/sample_signals.png" alt="Cleaned sensor signals for the four activities" width="92%">
 </p>
 
-**Demonstration videos**
-
-| Standing | Walking | Jumping | Still |
-|:-:|:-:|:-:|:-:|
-| [add link]() | [add link]() | [add link]() | [add link]() |
-
 ## Repository structure
 
 ```
@@ -99,7 +93,7 @@ Recorded with Sensor Logger on an iPhone 13: accelerometer and gyroscope (x, y, 
 ├── clean_data/                      cleaned recordings, 50 Hz, 8 s each (train, test)
 ├── features/                        z-scored feature tables
 ├── figures/                         plots from the notebook
-├── hmm_activity_recognition.ipynb   full pipeline: cleaning to evaluation
+├── hmm_notebook.ipynb               full pipeline: cleaning to evaluation
 ├── results_table.csv                sensitivity, specificity and accuracy
 ├── report.pdf                       short report
 ├── requirements.txt
@@ -112,7 +106,7 @@ Recorded with Sensor Logger on an iPhone 13: accelerometer and gyroscope (x, y, 
 git clone https://github.com/<your-username>/<your-repo>.git
 cd <your-repo>
 pip install -r requirements.txt
-jupyter notebook hmm_activity_recognition.ipynb
+jupyter notebook hmm_notebook.ipynb
 ```
 
 Run all cells. The notebook rebuilds `clean_data/`, `features/` and `figures/` from `raw_data/` in about a minute.
@@ -195,4 +189,4 @@ The only error is the last window of `jumping_18`, predicted as walking. The plo
 
 ---
 
-<sub>Individual assignment: Formative 2, Hidden Markov Models. Author: [add your name]</sub>
+<sub>Hidden Markov Models. Author: Alain Ishimwe Ngabo</sub>
